@@ -1,0 +1,19 @@
+{
+  "name": "canada_gun_dir",
+  "version": "1.0.0",
+  "description": "A directory of reddit users on r/CanadaGun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/violetguos/canada_gun_dir.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/violetguos/canada_gun_dir/issues"
+  },
+  "homepage": "https://github.com/violetguos/canada_gun_dir#readme"
+}

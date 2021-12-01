@@ -1,0 +1,1 @@
+obsidian://open?vault=brain&file=hobbist%2Fgun%20price%20side%20project

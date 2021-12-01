@@ -1,0 +1,32 @@
+[
+    {
+        "username": "OfficerAdvil",
+        "clubs": "",
+        "license": [
+            "rifles",
+            "pistols",
+            "shotguns"
+        ],
+        "guns": {
+            "isRestricted": true,
+            "name": "restricted"
+        },
+        "province": "alberta",
+        "city_region": "airdrie",
+        "last_updated": 1638330710463
+    },
+    {
+        "username": "Chest_Treetruck",
+        "clubs": "Spruce Grove Gun Club",
+        "license": [
+            "rifles"
+        ],
+        "guns": {
+            "isRestricted": false,
+            "name": "non-restricted"
+        },
+        "province": "alberta",
+        "city_region": "Beaumont",
+        "last_updated": 1638330710463
+    }
+]
