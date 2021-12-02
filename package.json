@@ -1,19 +1,17 @@
 {
-  "name": "canada_gun_dir",
-  "version": "1.0.0",
-  "description": "A directory of reddit users on r/CanadaGun",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "canada-gun-dir",
+  "private": true,
+  "dependencies": {
+    "@rails/actioncable": "^6.0.0",
+    "@rails/activestorage": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.4.3",
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/violetguos/canada_gun_dir.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/violetguos/canada_gun_dir/issues"
-  },
-  "homepage": "https://github.com/violetguos/canada_gun_dir#readme"
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3"
+  }
 }
