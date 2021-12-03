@@ -35,8 +35,6 @@ DB relations
 * user -> 
     - reddit username or discord username (cannot both be null)
     - club(S) (array for now)
-    - license (bool)
-    - type of gun(s) (string for now)
     - province (string)
     - city/region (string)
     - note (text)
