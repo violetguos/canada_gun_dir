@@ -14,8 +14,16 @@
   "version": "0.1.0",
   "devDependencies": {
     "@prettier/plugin-ruby": "^2.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
     "prettier-plugin-erb": "^0.4.0",
     "webpack-dev-server": "^3"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
