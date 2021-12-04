@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="title">Flights</h1>
+<h1 class="title">users</h1>
 
 
  
-<%= simple_form_for :flight, url: root_path, method: "GET", local: true do |f| %>
+<%= simple_form_for :user, url: root_path, method: "GET", local: true do |f| %>
     
 
   <div class="control">
@@ -20,14 +20,11 @@
     <%= f.submit "Search", class: "button is-primary"%>
   </div>
 <% end %>
-<%
-=begin %>
+
 <% if @users && @users.empty?%>
   <p>Sorry, we cannot find a user of your choosing. Please select another flight.</p>
 <%elsif @users%>
   <%= render 'results' %>
 <%else %>
   <p>Please select at least one option</p>
-<%end%> %>
-<%
-=end %>
+<%end%>

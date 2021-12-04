@@ -28,17 +28,16 @@ ActiveRecord::Base.transaction do
 
     # a random combo of the arrays above
     indices = []
-    4.times do |_j|
-      indices << Faker::Number.between(from: 0, to: 3)
-    end
+    4.times { |_j| indices << Faker::Number.between(from: 0, to: 3) }
 
-    @users[i] = User.create(
-      reddit_username: Faker::Twitter.screen_name,
-      club: clubs[indices[0]],
-      specific_city: cities[indices[1]],
-      province: provinces[indices[2]],
-      greater_region: greater_regions[indices[3]],
-      notes: note
-    )
+    @users[i] =
+      User.create(
+        reddit_username: Faker::Twitter.screen_name,
+        club: clubs[indices[0]],
+        specific_city: cities[indices[1]],
+        province: provinces[indices[2]],
+        greater_region: greater_regions[indices[3]],
+        notes: note
+      )
   end
 end

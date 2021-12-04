@@ -2,7 +2,7 @@
 
 one:
   reddit_username: MyString
-  club: 
+  club:
   greater_region: MyString
   specific_city: MyString
   province: MyString
@@ -10,7 +10,7 @@ one:
 
 two:
   reddit_username: MyString
-  club: 
+  club:
   greater_region: MyString
   specific_city: MyString
   province: MyString
