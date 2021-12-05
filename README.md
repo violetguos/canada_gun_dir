@@ -43,8 +43,9 @@ DB relations
   - note (text)
 
 * make a simple UI
-  - dropdown selections
-    - export to PDF using react pkgs
+  - header
+  - project intro tab
+  - interpolate the username with URL
 * populate with real data
   - don't commit user info to this repo
   - write a script to read the excel entries and send them to the heroku db
