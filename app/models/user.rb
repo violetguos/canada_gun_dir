@@ -3,8 +3,13 @@ class User < ApplicationRecord
     if params.empty?
       nil
     elsif params
-      users =
-        User.where(club: params[:club], greater_region: params[:greater_region])
+      # apparently you can't pass in the entire hash like this `users = User.where(params)` B/C sql injection
+      raw_sql = ''
+      params.each do |key, val|
+        raw_sql << key << ' = ' << "\'" << val << "\'" if val
+        raw_sql << ' AND ' if key != params.keys.last
+      end
+      users = User.where(raw_sql)
     end
     users
   end
