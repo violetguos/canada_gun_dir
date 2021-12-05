@@ -6,17 +6,19 @@
     
 
   <div class="control">
-    <label class="label">Club</label>
     <div class="select">
 
       <%= f.input :club, as: :select, 
-        collection: User.all.collect { |u| u.club}.uniq, required: false , wrapper: false, label: false%>
-      <%= f.input :greater_region, as: :select, 
-        collection: User.all.collect { |u| u.greater_region}.uniq, required: false , wrapper: false, label: false%>
-      <%= f.input :specific_city, as: :select, 
-        collection: User.all.collect { |u| u.specific_city}.uniq, required: false , wrapper: false, label: false%>
+        collection: User.all.collect { |u| u.club}.uniq, required: false , wrapper: false, label: "Club"%>
       <%= f.input :province, as: :select, 
-        collection: User.all.collect { |u| u.province}.uniq, required: false , wrapper: false, label: false%>
+        collection: User.all.collect { |u| u.province}.uniq, required: false , wrapper: false, label: "Province"%>
+      <%= f.input :greater_region, as: :select, 
+        collection: User.all.collect { |u| u.greater_region}.uniq, required: false , wrapper: false, label: "Greater Region"%>
+      <%= f.input :specific_city, as: :select, 
+        collection: User.all.collect { |u| u.specific_city}.uniq, required: false , wrapper: false, label: "City"%>
+      <%= f.input :notes,  required: false , wrapper: false, label: "Keyword in member's notes"%>
+      
+
     </div>
   </div>
   <br>
@@ -26,7 +28,7 @@
 <% end %>
 
 <% if @users && @users.empty?%>
-  <p>Sorry, we cannot find a user of your choosing. Please select another flight.</p>
+  <p>Sorry, we cannot find a user of your choosing. Please try another options.</p>
 <%elsif @users%>
   <%= render 'results' %>
 <%else %>
