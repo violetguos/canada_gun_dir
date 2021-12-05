@@ -38,4 +38,7 @@ yarn-debug.log*
 ## added by me
 *.DS_store
 *.xls
-*.csv
+*.xlsx
+.csv
+lib/assets/master_spreadsheet/
+!lib/assets/master_spreadsheet/README.md

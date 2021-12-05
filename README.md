@@ -23,6 +23,8 @@ Created database 'canada_gun_dir_test'
 
 - Database initialization
 
+  - import from spread sheet `bundle exec rails import:data`
+
 - How to run the test suite
 
 - Services (job queues, cache servers, search engines, etc.)
@@ -49,3 +51,8 @@ DB relations
 * populate with real data
   - don't commit user info to this repo
   - write a script to read the excel entries and send them to the heroku db
+
+## notes
+
+- users with multiple entries: only the first one is recorded.
+- the conditions are combined with 'AND' statements in SQL (essentially)

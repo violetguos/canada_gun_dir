@@ -7,15 +7,15 @@
 
   <div class="control">
     <div class="select">
-
+      <%# .compact gets rid of nil %>
       <%= f.input :club, as: :select, 
-        collection: User.all.collect { |u| u.club}.uniq, required: false , wrapper: false, label: "Club"%>
+        collection: User.all.collect { |u| u.club}.uniq.compact, required: false , wrapper: false, label: "Club"%>
       <%= f.input :province, as: :select, 
-        collection: User.all.collect { |u| u.province}.uniq, required: false , wrapper: false, label: "Province"%>
+        collection: User.all.collect { |u| u.province}.uniq.compact, required: false , wrapper: false, label: "Province"%>
       <%= f.input :greater_region, as: :select, 
-        collection: User.all.collect { |u| u.greater_region}.uniq, required: false , wrapper: false, label: "Greater Region"%>
+        collection: User.all.collect { |u| u.greater_region}.uniq.compact, required: false , wrapper: false, label: "Greater Region"%>
       <%= f.input :specific_city, as: :select, 
-        collection: User.all.collect { |u| u.specific_city}.uniq, required: false , wrapper: false, label: "City"%>
+        collection: User.all.collect { |u| u.specific_city}.uniq.compact, required: false , wrapper: false, label: "City"%>
       <%= f.input :notes,  required: false , wrapper: false, label: "Keyword in member's notes"%>
       
 
