@@ -10,9 +10,13 @@
     <div class="select">
 
       <%= f.input :club, as: :select, 
-      collection: User.all.collect { |u| u.club}.uniq, required: false , wrapper: false, label: false%>
+        collection: User.all.collect { |u| u.club}.uniq, required: false , wrapper: false, label: false%>
       <%= f.input :greater_region, as: :select, 
-      collection: User.all.collect { |u| u.greater_region}.uniq, required: false , wrapper: false, label: false%>
+        collection: User.all.collect { |u| u.greater_region}.uniq, required: false , wrapper: false, label: false%>
+      <%= f.input :specific_city, as: :select, 
+        collection: User.all.collect { |u| u.specific_city}.uniq, required: false , wrapper: false, label: false%>
+      <%= f.input :province, as: :select, 
+        collection: User.all.collect { |u| u.province}.uniq, required: false , wrapper: false, label: false%>
     </div>
   </div>
   <br>
