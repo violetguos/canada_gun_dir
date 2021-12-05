@@ -3,8 +3,7 @@ class User < ApplicationRecord
     if search.empty?
       nil
     elsif search
-      users = User.all
-      users = users.where('club = ?', search[:club]) if search[:club]
+      users = User.where('club = ?', search[:club]) if search[:club]
     end
     users
   end
