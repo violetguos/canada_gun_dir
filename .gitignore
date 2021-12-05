@@ -40,5 +40,3 @@ yarn-debug.log*
 *.xls
 *.xlsx
 .csv
-lib/assets/master_spreadsheet/
-!lib/assets/master_spreadsheet/README.md
