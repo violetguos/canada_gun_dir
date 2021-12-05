@@ -1,9 +1,10 @@
 class User < ApplicationRecord
-  def self.search(search)
-    if search.empty?
+  def self.search(params)
+    if params.empty?
       nil
-    elsif search
-      users = User.where('club = ?', search[:club]) if search[:club]
+    elsif params
+      users =
+        User.where(club: params[:club], greater_region: params[:greater_region])
     end
     users
   end
