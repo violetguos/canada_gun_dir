@@ -38,21 +38,30 @@ Created database 'canada_gun_dir_test'
 DB relations
 
 - user ->
-  - reddit username or discord username (cannot both be null)
+  - reddit username
   - club(S) (array for now)
   - province (string)
   - city/region (string)
   - note (text)
+- [ ] TODO: enforce username not null rule in DB
+- [ ] allow repeated entries for now (username cannot be null but dones't have to be unique)
 
 * make a simple UI
-  - header
-  - project intro tab
-  - interpolate the username with URL
+  - [ ] header
+  - [ ] project intro tab
+  - [ ] interpolate the username with URL
 * populate with real data
-  - don't commit user info to this repo
-  - write a script to read the excel entries and send them to the heroku db
+  - [x] don't commit user info to this repo
+  - [x] write a script to read the excel entries and send them to the heroku db
+  - [ ] get rid of empty space entries, change to nil
+  - [ ] convert to lower cases in db. search keyword also convert to lower case.
 
 ## notes
 
 - users with multiple entries: only the first one is recorded.
 - the conditions are combined with 'AND' statements in SQL (essentially)
+
+## roadmap for 2.0
+
+- make proper DB fields for properties
+- enable one to many relationships
