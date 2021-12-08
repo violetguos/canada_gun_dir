@@ -54,7 +54,7 @@ DB relations
   - [x] don't commit user info to this repo
   - [x] write a script to read the excel entries and send them to the heroku db
   - [ ] get rid of empty space entries, change to nil
-  - [ ] convert to lower cases in db. search keyword also convert to lower case.
+  - [x] convert to lower cases in db. search keyword also convert to lower case.
 
 ## notes
 
