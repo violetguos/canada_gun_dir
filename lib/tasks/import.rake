@@ -21,7 +21,7 @@ namespace :import do
       user_data = Hash[[headers, row].transpose]
       user_data.transform_keys! { |k| header_mapping[k].to_sym }
       next if user_data[:reddit_username].nil?
-      user_data[:notes].downcase! # convert all notes to lower case
+      user_data[:notes].downcase! if user_data[:notes] # convert all notes to lower case
       user = User.new(user_data)
       user.save!
     end

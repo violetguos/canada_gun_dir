@@ -5,11 +5,12 @@
 <%= simple_form_for :user, url: root_path, method: "GET", local: true do |f| %>
     
 
-  <div class="control">
-    <div class="select">
+  <div class="field">
       <%# .compact gets rid of nil %>
+      <label class="label">Email</label>
       <%= f.input :club, as: :select, 
         collection: User.all.collect { |u| u.club}.uniq.compact, required: false , wrapper: false, label: "Club"%>
+  </div>
       <%= f.input :province, as: :select, 
         collection: User.all.collect { |u| u.province}.uniq.compact, required: false , wrapper: false, label: "Province"%>
       <%= f.input :greater_region, as: :select, 
@@ -17,9 +18,6 @@
       <%= f.input :specific_city, as: :select, 
         collection: User.all.collect { |u| u.specific_city}.uniq.compact, required: false , wrapper: false, label: "City"%>
       <%= f.input :notes,  required: false , wrapper: false, label: "Keyword in member's notes"%>
-      
-
-    </div>
   </div>
   <br>
   <div class="control">

@@ -9,7 +9,7 @@ class User < ApplicationRecord
         if key != 'notes'
           raw_sql << key << ' = ' << "\'" << val << "\'" if val
         else
-          raw_sql << key << ' LIKE ' << "\'%" << val << "%\'" if val
+          raw_sql << key << ' LIKE ' << "\'%" << val.downcase << "%\'" if val
         end
         raw_sql << ' AND ' if key != params.keys.last
       end

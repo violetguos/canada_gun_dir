@@ -31,7 +31,9 @@ Created database 'canada_gun_dir_test'
 
 - Deployment instructions
 
-- ...
+- front end using Bulma
+  - [tutorial](https://medium.com/@caprioli.tyler/using-a-framework-to-make-beautiful-websites-bulma-w-rails-65ff6d5f31fc)
+  - the secret is to add `import bulma` to `app/javascript/packs/application.scss`
 
 ## roadmap
 
@@ -49,11 +51,11 @@ DB relations
 * make a simple UI
   - [ ] header
   - [ ] project intro tab
-  - [ ] interpolate the username with URL
+  - [x] interpolate the username with URL
 * populate with real data
   - [x] don't commit user info to this repo
   - [x] write a script to read the excel entries and send them to the heroku db
-  - [ ] get rid of empty space entries, change to nil
+  - [did not do] get rid of empty space entries, change to nil
   - [x] convert to lower cases in db. search keyword also convert to lower case.
 
 ## notes

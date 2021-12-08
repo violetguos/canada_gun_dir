@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Reddit username</th>
+      <th>Reddit profile link</th>
       <th>Club</th>
       <th>Greater region</th>
       <th>Specific city</th>
@@ -18,7 +18,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.reddit_username %></td>
+        <td><a href="https://www.reddit.com/user/<%= user.reddit_username %>"><%= user.reddit_username %></a></td>
         <td><%= user.club %></td>
         <td><%= user.greater_region %></td>
         <td><%= user.specific_city %></td>
