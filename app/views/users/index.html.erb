@@ -3,25 +3,58 @@
 <h1 class="title">Canada Gun customizable reddit directory</h1>
 
 <%= simple_form_for :user, url: root_path, method: "GET", local: true do |f| %>
-    
+  <div class="field">
+    <label class="label">Email</label>
+      <div class="control">
+          <div class="select">
+            <%= f.input :club, as: :select, 
+              collection: User.all.collect { |u| u.club}.uniq.compact, required: false, label: false, wrapper: false %> 
+        <%# <%= .compact gets rid of nil %> 
+        </div>
+    </div>
+  </div>
+    <div class="field">
+    <label class="label">Province</label>
+      <div class="control">
+          <div class="select">
+            <%= f.input :province, as: :select, 
+              collection: User.all.collect { |u| u.province}.uniq.compact, required: false, wrapper: false, label: false %>
+
+        </div>
+    </div>
+  </div>
+    <div class="field">
+    <label class="label">Greater Region</label>
+      <div class="control">
+          <div class="select">
+            <%= f.input :greater_region, as: :select, 
+              collection: User.all.collect { |u| u.greater_region}.uniq.compact, required: false, wrapper: false, label: false %>
+        </div>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Specific city</label>
+      <div class="control">
+          <div class="select">
+            <%= f.input :specific_city, as: :select, 
+              collection: User.all.collect { |u| u.specific_city}.uniq.compact, required: false, wrapper: false, label: false %>
+        </div>
+    </div>
+  </div>
 
   <div class="field">
-      <%# .compact gets rid of nil %>
-      <label class="label">Email</label>
-      <%= f.input :club, as: :select, 
-        collection: User.all.collect { |u| u.club}.uniq.compact, required: false , wrapper: false, label: "Club"%>
+    <label class="label">Keyword in Additional Notes</label>
+
+    <div class="control">
+        <%= f.input :notes, required: false , wrapper: false, label: false, input_html: { class: "input" } %>
+    </div>
   </div>
-      <%= f.input :province, as: :select, 
-        collection: User.all.collect { |u| u.province}.uniq.compact, required: false , wrapper: false, label: "Province"%>
-      <%= f.input :greater_region, as: :select, 
-        collection: User.all.collect { |u| u.greater_region}.uniq.compact, required: false , wrapper: false, label: "Greater Region"%>
-      <%= f.input :specific_city, as: :select, 
-        collection: User.all.collect { |u| u.specific_city}.uniq.compact, required: false , wrapper: false, label: "City"%>
-      <%= f.input :notes,  required: false , wrapper: false, label: "Keyword in member's notes"%>
-  </div>
-  <br>
-  <div class="control">
-    <%= f.submit "Search", class: "button is-primary"%>
+  
+  <div class="field is-grouped">
+    <div class="control">
+      <%= f.submit "Search", class: "button is-primary"%>
+    </div>
   </div>
 <% end %>
 
