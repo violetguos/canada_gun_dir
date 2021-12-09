@@ -46,11 +46,12 @@ DB relations
   - city/region (string)
   - note (text)
 - [ ] TODO: enforce username not null rule in DB
-- [ ] allow repeated entries for now (username cannot be null but dones't have to be unique)
+- [ ] ~allow~ no do not allow. keepin our standard high. repeated entries for now (username cannot be null but dones't have to be unique)
+- [ ] regex the notes field. Add RPAL attribute!!
 
 * make a simple UI
   - [ ] header
-  - [ ] project intro tab
+  - [ ] project intro tab, add links and redirects in the tabs
   - [x] interpolate the username with URL
 * populate with real data
   - [x] don't commit user info to this repo
@@ -67,3 +68,6 @@ DB relations
 
 - make proper DB fields for properties
 - enable one to many relationships
+- integrate React w/ Rails backend
+- at least have a save as PDF option
+- publish an API/gem/npm pkg that has all the gun club locations, organized by province, geo loc, etc
