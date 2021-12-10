@@ -45,12 +45,14 @@ DB relations
   - province (string)
   - city/region (string)
   - note (text)
-- [ ] TODO: enforce username not null rule in DB
-- [ ] ~allow~ no do not allow. keepin our standard high. repeated entries for now (username cannot be null but dones't have to be unique)
-- [ ] regex the notes field. Add RPAL attribute!!
+- [x] TODO: enforce username not null rule
+      ~in DB~ not in DB, but in the rake import
+- [x] ~allow~ no do not allow. keepin our standard high. repeated entries for now (username cannot be null but dones't have to be unique)
+- [x] ~regex~ simple substring search the notes field. Add RPAL attribute!!
+- [ ] enable search with license info
 
 * make a simple UI
-  - [ ] header
+  - [x] header
   - [ ] project intro tab, add links and redirects in the tabs
   - [x] interpolate the username with URL
 * populate with real data
