@@ -49,7 +49,7 @@ DB relations
       ~in DB~ not in DB, but in the rake import
 - [x] ~allow~ no do not allow. keepin our standard high. repeated entries for now (username cannot be null but dones't have to be unique)
 - [x] ~regex~ simple substring search the notes field. Add RPAL attribute!!
-- [ ] enable search with license info
+- [x] enable search with license info
 
 * make a simple UI
   - [x] header

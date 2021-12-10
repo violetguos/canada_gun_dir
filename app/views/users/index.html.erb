@@ -44,6 +44,16 @@
   </div>
 
   <div class="field">
+    <label class="label">License status*</label>
+      <div class="control">
+          <div class="select">
+            <%= f.input :licensed, as: :select, 
+              collection: User.all.collect { |u| u.licensed}.uniq.compact, required: false, wrapper: false, label: false %>
+        </div>
+    </div>
+  </div>
+
+  <div class="field">
     <label class="label">Keyword in Additional Notes</label>
 
     <div class="control">
