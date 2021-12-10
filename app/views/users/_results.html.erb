@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Curated list of users on r/CanadaGun</h1>
-
+<p>Note: the license info column is inferred based on the notes column. Please confirm the license status with the individual.</p>
 <table class="table">
   <thead>
     <tr>
@@ -11,6 +11,7 @@
       <th>Specific city</th>
       <th>Province</th>
       <th>Notes</th>
+      <th>License*</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
         <td><%= user.specific_city %></td>
         <td><%= user.province %></td>
         <td><%= user.notes %></td>
+        <td><%= user.licensed%></td>
         <td><%= link_to 'Show', user %></td>
        </tr>
     <% end %>
