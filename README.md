@@ -53,7 +53,7 @@ DB relations
 
 * make a simple UI
   - [x] header
-  - [ ] project intro tab, add links and redirects in the tabs
+  - [x] project intro tab, add links and redirects in the tabs
   - [x] interpolate the username with URL
 * populate with real data
   - [x] don't commit user info to this repo
