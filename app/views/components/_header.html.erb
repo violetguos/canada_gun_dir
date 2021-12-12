@@ -4,7 +4,7 @@
       <%= image_tag("ca_gun_logo.png") %>
     </a>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -24,3 +24,5 @@
     </div>
   </div>
 </nav>
+
+<%= javascript_pack_tag 'navbar_mobile.js' %>
