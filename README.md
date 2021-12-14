@@ -55,10 +55,9 @@ DB relations
   - [x] header
   - [x] project intro tab, add links and redirects in the tabs
   - [x] interpolate the username with URL
-  - [ ] make it at least somewhat mobile friendly
+  - [x] make it at least somewhat mobile friendly -> nav bar hamburger icon js
   - [x] render the individual show pages when on mobile
-  - [ ] render the note for all the show pages
-  - [ ] wrap the note in a warning tile
+  - [x] wrap the note in a warning tile
 * populate with real data
   - [x] don't commit user info to this repo
   - [x] write a script to read the excel entries and send them to the heroku db
