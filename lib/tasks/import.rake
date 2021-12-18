@@ -12,10 +12,7 @@ namespace :import do
   }
 
   task data: :environment do
-    data =
-      Roo::Spreadsheet.open(
-        'lib/assets/master_spreadsheet/Meetup Spreadsheet of Boomsticks.xlsx'
-      )
+    data = Roo::Spreadsheet.open('lib/assets/master_spreadsheet/meetup.xlsx')
     headers = data.row(1) # index starts at 1 JFC
     data.each_with_index do |row, idx|
       next if idx == 0 # skip header  # create hash from headers and cells
