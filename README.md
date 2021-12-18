@@ -68,6 +68,11 @@ DB relations
 
 - users with multiple entries: only the first one is recorded.
 - the conditions are combined with 'AND' statements in SQL (essentially)
+- how to upload the DB entries to heroku
+  - https://stackoverflow.com/questions/27761986/scp-file-from-local-to-heroku-server
+  - http://evans.io/legacy/posts/heroku-survival-guide/
+  - wget or scp on remote from local (i went with wget)
+  - run ` heroku rake import:data`
 
 ## roadmap for 2.0
 
